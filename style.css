@@ -1,0 +1,168 @@
+/* Violet: hsl(257, 40%, 49%)
+Soft Magenta: hsl(300, 69%, 71%) */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(257, 40%, 49%);
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.background{
+    width: 100%;
+}
+
+.main{
+    position: absolute;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    /* margin: 2rem 5rem; */
+}
+
+.logo img{
+    width: 10rem;
+    margin-left: 3rem;
+    margin-top: 3rem;
+}
+
+.block{
+    display: flex;
+    margin: 4rem 3rem;
+}
+
+
+.main_pic img{
+    width: 40rem;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    margin-left: 3rem;
+    color: white;
+}
+
+.text h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.text p{
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 1rem;
+    letter-spacing: 0.04em;
+}
+
+.text button{
+    width: 12rem;
+    padding: 0.7rem 4rem;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 40px;
+    transition: transition .5s ease-in;
+    font-size: 0.9rem;
+    color: hsl(257, 40%, 49%);
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    background: white;
+}
+
+.text button:hover{
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+    letter-spacing: 0.09rem;
+}
+
+.links{
+    width: 100%;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.link{
+    cursor: pointer;
+    transition: transition .5s ease-in;
+}
+
+@media screen and (max-width: 1200px) {
+    
+    .main_pic img{
+        width: 25rem;
+    }
+    .text h1{
+        font-size: 1.5rem;
+    }
+    .text p{
+        font-size: 0.7;
+    }
+}
+
+
+@media screen and (max-width: 890px){
+    .main_pic img{
+        width: 20rem;
+    }
+    .block{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+    .text{
+        justify-content: center;
+        align-items: center;
+        margin-left: 0;
+    }
+    .text h1{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .text p{
+        margin-top: 0.5rem;
+        text-align: center;
+        margin-top: 1rem;
+    }
+    .text button{
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 375px){
+
+    .block{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 3rem;
+    }
+    .main_pic img{
+        width: 18rem;
+    }
+    .text{
+        align-items: center;
+        justify-content: center;
+        margin-top: 3rem;
+    }
+    
+    .text button{
+        margin: 2rem;
+    }
+}
